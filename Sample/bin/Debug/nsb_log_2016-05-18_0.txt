@@ -1,0 +1,901 @@
+﻿2016-05-18 19:48:42.533 INFO  DefaultFactory Logging to 'C:\Users\LaïlaBougria\Downloads\unity\Unity_6\Sample\bin\Debug\' with level Info
+2016-05-18 19:48:50.959 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2016-05-18 19:48:50.965 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2016-05-18 19:48:50.971 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2016-05-18 19:48:50.977 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2016-05-18 19:48:50.984 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2016-05-18 19:48:51.095 WARN  NServiceBus.Licensing.LicenseManager Trial for the Particular Service Platform has expired
+2016-05-18 19:48:51.142 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 19:48:51.208 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManager]
+Startup Tasks: None
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -XmlSerialization not enable since serialization definition not detected.
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManagerBasedDeferral]
+Startup Tasks: None
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2016-05-18 19:48:51.537 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'AzureAD\LaïlaBougria' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 19:48:51.611 WARN  NServiceBus.Transports.Msmq.MsmqQueueCreator Queue DESKTOP-T7PDQN5\private$\Samples.Unity.Retries does not exist.
+2016-05-18 19:48:51.800 WARN  NServiceBus.Transports.Msmq.MsmqQueueCreator Queue DESKTOP-T7PDQN5\private$\Samples.Unity.TimeoutsDispatcher does not exist.
+2016-05-18 19:48:51.941 WARN  NServiceBus.Transports.Msmq.MsmqQueueCreator Queue DESKTOP-T7PDQN5\private$\Samples.Unity.Timeouts does not exist.
+2016-05-18 19:48:52.089 WARN  NServiceBus.Transports.Msmq.MsmqQueueCreator Queue DESKTOP-T7PDQN5\private$\Samples.Unity does not exist.
+2016-05-18 19:48:55.760 INFO  NServiceBus.Satellites.SatelliteLauncher Started 3/3 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2016-05-18 19:48:55.773 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/3 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2016-05-18 19:48:55.773 INFO  NServiceBus.Satellites.SatelliteLauncher Started 2/3 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2016-05-18 20:44:47.787 INFO  DefaultFactory Logging to 'C:\Users\LaïlaBougria\Downloads\unity\Unity_6\Sample\bin\Debug\' with level Info
+2016-05-18 20:44:52.259 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2016-05-18 20:44:52.265 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2016-05-18 20:44:52.272 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2016-05-18 20:44:52.283 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2016-05-18 20:44:52.290 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2016-05-18 20:45:40.504 INFO  DefaultFactory Logging to 'C:\Users\LaïlaBougria\Downloads\unity\Unity_6\Sample\bin\Debug\' with level Info
+2016-05-18 20:45:40.890 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2016-05-18 20:45:40.900 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2016-05-18 20:45:40.908 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2016-05-18 20:45:40.917 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2016-05-18 20:45:40.926 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2016-05-18 20:45:43.095 WARN  NServiceBus.Licensing.LicenseManager Trial for the Particular Service Platform has expired
+2016-05-18 20:45:43.142 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 20:45:43.203 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: AzureServiceBusTransportConfiguration
+Version: 6.4.0
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: DefaultTopology
+Version: 6.4.0
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -XmlSerialization not enable since serialization definition not detected.
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManagerBasedDeferral]
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+
+2016-05-18 20:45:43.507 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'AzureAD\LaïlaBougria' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 20:45:43.544 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopologyCreator Going to create topology for address 'Test-DESKTOP-T7PDQN5.Retries' if needed
+2016-05-18 20:45:43.559 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create queue for address 'Test-DESKTOP-T7PDQN5.Retries' if needed
+2016-05-18 20:45:43.619 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'Test-DESKTOP-T7PDQN5.Retries'
+2016-05-18 20:45:43.628 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking namespace for existance of the queue 'Test-DESKTOP-T7PDQN5.Retries'
+2016-05-18 20:45:44.886 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'Test-DESKTOP-T7PDQN5.Retries' does not exist
+2016-05-18 20:45:45.368 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'Test-DESKTOP-T7PDQN5.Retries' created
+2016-05-18 20:45:45.376 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create topic for address 'Test-DESKTOP-T7PDQN5.Retries' if needed
+2016-05-18 20:45:45.389 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Did not create topic for address  'Test-DESKTOP-T7PDQN5.Retries' as it does not correspond to the local address
+2016-05-18 20:45:45.402 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopologyCreator Going to create topology for address 'Test-DESKTOP-T7PDQN5' if needed
+2016-05-18 20:45:45.411 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create queue for address 'Test-DESKTOP-T7PDQN5' if needed
+2016-05-18 20:45:45.424 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'Test-DESKTOP-T7PDQN5'
+2016-05-18 20:45:45.435 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking namespace for existance of the queue 'Test-DESKTOP-T7PDQN5'
+2016-05-18 20:45:46.245 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'Test-DESKTOP-T7PDQN5' does not exist
+2016-05-18 20:45:46.734 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'Test-DESKTOP-T7PDQN5' created
+2016-05-18 20:45:46.744 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create topic for address 'Test-DESKTOP-T7PDQN5' if needed
+2016-05-18 20:45:46.760 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopicCreator Checking cache for existence of the topic 'Test-DESKTOP-T7PDQN5.events'
+2016-05-18 20:45:46.769 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopicCreator Checking namespace for existence of the topic 'Test-DESKTOP-T7PDQN5.events'
+2016-05-18 20:45:47.580 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopicCreator Determined that the topic 'Test-DESKTOP-T7PDQN5.events' does not exist
+2016-05-18 20:45:48.066 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopicCreator Topic 'Test-DESKTOP-T7PDQN5.events' created
+2016-05-18 20:45:48.074 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopologyCreator Going to create topology for address 'error' if needed
+2016-05-18 20:45:48.083 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create queue for address 'error' if needed
+2016-05-18 20:45:48.093 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'error-DESKTOP-T7PDQN5'
+2016-05-18 20:45:48.101 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking namespace for existance of the queue 'error-DESKTOP-T7PDQN5'
+2016-05-18 20:45:48.825 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'error-DESKTOP-T7PDQN5' does not exist
+2016-05-18 20:45:49.294 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'error-DESKTOP-T7PDQN5' created
+2016-05-18 20:45:49.302 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create topic for address 'error' if needed
+2016-05-18 20:45:49.311 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Did not create topic for address  'error' as it does not correspond to the local address
+2016-05-18 20:45:51.303 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusDequeueStrategy Creating a new notifier for address Test-DESKTOP-T7PDQN5@Endpoint=sb://virteofidiem1285.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=qhFs7Oy1zo7afR27vV2LO7T+tYoEaqwvkjIZ06yhEx8=
+2016-05-18 20:45:51.315 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'Test-DESKTOP-T7PDQN5'
+2016-05-18 20:45:51.323 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'Test-DESKTOP-T7PDQN5' does not exist
+2016-05-18 20:45:51.663 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'Test-DESKTOP-T7PDQN5' already exists, another node probably beat us to it
+2016-05-18 20:45:51.829 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusDequeueStrategy Started tracking new notifier for address Test-DESKTOP-T7PDQN5@Endpoint=sb://virteofidiem1285.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=qhFs7Oy1zo7afR27vV2LO7T+tYoEaqwvkjIZ06yhEx8=
+2016-05-18 20:45:51.855 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusDequeueStrategy Creating a new notifier for address Test-DESKTOP-T7PDQN5.Retries@Endpoint=sb://virteofidiem1285.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=qhFs7Oy1zo7afR27vV2LO7T+tYoEaqwvkjIZ06yhEx8=
+2016-05-18 20:45:51.865 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'Test-DESKTOP-T7PDQN5.Retries'
+2016-05-18 20:45:51.877 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'Test-DESKTOP-T7PDQN5.Retries' does not exist
+2016-05-18 20:45:52.065 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'Test-DESKTOP-T7PDQN5.Retries' already exists, another node probably beat us to it
+2016-05-18 20:45:52.076 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusDequeueStrategy Started tracking new notifier for address Test-DESKTOP-T7PDQN5.Retries@Endpoint=sb://virteofidiem1285.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=qhFs7Oy1zo7afR27vV2LO7T+tYoEaqwvkjIZ06yhEx8=
+2016-05-18 20:45:52.088 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/1 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2016-05-18 20:45:52.204 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'Test-DESKTOP-T7PDQN5'
+2016-05-18 20:45:52.213 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'Test-DESKTOP-T7PDQN5' does not exist
+2016-05-18 20:45:52.492 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'Test-DESKTOP-T7PDQN5' already exists, another node probably beat us to it
+2016-05-18 20:45:52.947 INFO  MyService Hello from MyService.
+2016-05-18 20:45:52.958 ERROR NServiceBus.LicenseBehavior Your license has expired
+2016-05-18 20:47:24.096 INFO  DefaultFactory Logging to 'C:\Users\LaïlaBougria\Downloads\unity\Unity_6\Sample\bin\Debug\' with level Info
+2016-05-18 20:47:24.363 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2016-05-18 20:47:24.370 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2016-05-18 20:47:24.379 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2016-05-18 20:47:24.386 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2016-05-18 20:47:24.393 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2016-05-18 20:47:24.530 WARN  NServiceBus.Licensing.LicenseManager Trial for the Particular Service Platform has expired
+2016-05-18 20:47:24.582 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 20:47:31.220 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: AzureServiceBusTransportConfiguration
+Version: 6.4.0
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: DefaultTopology
+Version: 6.4.0
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -XmlSerialization not enable since serialization definition not detected.
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManagerBasedDeferral]
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+
+2016-05-18 20:47:31.509 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'AzureAD\LaïlaBougria' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 20:47:31.544 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopologyCreator Going to create topology for address 'Test-DESKTOP-T7PDQN5.Retries' if needed
+2016-05-18 20:47:31.555 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create queue for address 'Test-DESKTOP-T7PDQN5.Retries' if needed
+2016-05-18 20:47:31.609 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'Test-DESKTOP-T7PDQN5.Retries'
+2016-05-18 20:47:31.617 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking namespace for existance of the queue 'Test-DESKTOP-T7PDQN5.Retries'
+2016-05-18 20:47:31.996 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'Test-DESKTOP-T7PDQN5.Retries' exists
+2016-05-18 20:47:32.004 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'Test-DESKTOP-T7PDQN5.Retries' already exists, skipping creation
+2016-05-18 20:47:32.014 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create topic for address 'Test-DESKTOP-T7PDQN5.Retries' if needed
+2016-05-18 20:47:32.024 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Did not create topic for address  'Test-DESKTOP-T7PDQN5.Retries' as it does not correspond to the local address
+2016-05-18 20:47:32.039 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopologyCreator Going to create topology for address 'Test-DESKTOP-T7PDQN5' if needed
+2016-05-18 20:47:32.049 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create queue for address 'Test-DESKTOP-T7PDQN5' if needed
+2016-05-18 20:47:32.057 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'Test-DESKTOP-T7PDQN5'
+2016-05-18 20:47:32.068 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking namespace for existance of the queue 'Test-DESKTOP-T7PDQN5'
+2016-05-18 20:47:32.126 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'Test-DESKTOP-T7PDQN5' exists
+2016-05-18 20:47:32.134 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'Test-DESKTOP-T7PDQN5' already exists, skipping creation
+2016-05-18 20:47:32.142 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create topic for address 'Test-DESKTOP-T7PDQN5' if needed
+2016-05-18 20:47:32.156 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopicCreator Checking cache for existence of the topic 'Test-DESKTOP-T7PDQN5.events'
+2016-05-18 20:47:32.165 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopicCreator Checking namespace for existence of the topic 'Test-DESKTOP-T7PDQN5.events'
+2016-05-18 20:47:32.234 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopicCreator Determined that the topic 'Test-DESKTOP-T7PDQN5.events' exists
+2016-05-18 20:47:32.243 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopicCreator Topic 'Test-DESKTOP-T7PDQN5.events' already exists, skipping creation
+2016-05-18 20:47:32.252 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopologyCreator Going to create topology for address 'error' if needed
+2016-05-18 20:47:32.271 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create queue for address 'error' if needed
+2016-05-18 20:47:32.280 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'error-DESKTOP-T7PDQN5'
+2016-05-18 20:47:32.289 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking namespace for existance of the queue 'error-DESKTOP-T7PDQN5'
+2016-05-18 20:47:32.343 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'error-DESKTOP-T7PDQN5' exists
+2016-05-18 20:47:32.355 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'error-DESKTOP-T7PDQN5' already exists, skipping creation
+2016-05-18 20:47:32.365 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create topic for address 'error' if needed
+2016-05-18 20:47:32.379 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Did not create topic for address  'error' as it does not correspond to the local address
+2016-05-18 20:47:35.755 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusDequeueStrategy Creating a new notifier for address Test-DESKTOP-T7PDQN5@Endpoint=sb://virteofidiem1285.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=qhFs7Oy1zo7afR27vV2LO7T+tYoEaqwvkjIZ06yhEx8=
+2016-05-18 20:47:35.770 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'Test-DESKTOP-T7PDQN5'
+2016-05-18 20:47:35.778 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'Test-DESKTOP-T7PDQN5' exists
+2016-05-18 20:47:35.792 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'Test-DESKTOP-T7PDQN5' already exists, skipping creation
+2016-05-18 20:47:35.949 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusDequeueStrategy Started tracking new notifier for address Test-DESKTOP-T7PDQN5@Endpoint=sb://virteofidiem1285.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=qhFs7Oy1zo7afR27vV2LO7T+tYoEaqwvkjIZ06yhEx8=
+2016-05-18 20:47:35.969 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusDequeueStrategy Creating a new notifier for address Test-DESKTOP-T7PDQN5.Retries@Endpoint=sb://virteofidiem1285.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=qhFs7Oy1zo7afR27vV2LO7T+tYoEaqwvkjIZ06yhEx8=
+2016-05-18 20:47:35.987 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'Test-DESKTOP-T7PDQN5.Retries'
+2016-05-18 20:47:35.995 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'Test-DESKTOP-T7PDQN5.Retries' exists
+2016-05-18 20:47:36.004 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'Test-DESKTOP-T7PDQN5.Retries' already exists, skipping creation
+2016-05-18 20:47:36.079 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusDequeueStrategy Started tracking new notifier for address Test-DESKTOP-T7PDQN5.Retries@Endpoint=sb://virteofidiem1285.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=qhFs7Oy1zo7afR27vV2LO7T+tYoEaqwvkjIZ06yhEx8=
+2016-05-18 20:47:36.090 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/1 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2016-05-18 20:47:36.204 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'Test-DESKTOP-T7PDQN5'
+2016-05-18 20:47:36.212 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'Test-DESKTOP-T7PDQN5' exists
+2016-05-18 20:47:36.225 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'Test-DESKTOP-T7PDQN5' already exists, skipping creation
+2016-05-18 20:47:36.661 INFO  MyService Hello from MyService.
+2016-05-18 20:47:36.672 ERROR NServiceBus.LicenseBehavior Your license has expired
+2016-05-18 22:05:44.584 INFO  DefaultFactory Logging to 'C:\Users\LaïlaBougria\Downloads\unity\Unity_6\Sample\bin\Debug\' with level Info
+2016-05-18 22:05:57.323 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2016-05-18 22:05:57.330 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2016-05-18 22:05:57.337 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2016-05-18 22:05:57.343 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2016-05-18 22:05:57.349 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2016-05-18 22:05:59.549 WARN  NServiceBus.Licensing.LicenseManager Trial for the Particular Service Platform has expired
+2016-05-18 22:05:59.595 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
